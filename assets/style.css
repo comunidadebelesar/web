@@ -625,6 +625,18 @@ button,
   }
 }
 
+@media (max-width: 960px) {
+  .photo-placeholder {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-placeholder img {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 4px solid var(--ink);
+  }
+}
+
 @media (max-width: 600px) {
   body {
     background-size: 18px 18px;
@@ -659,16 +671,6 @@ button,
   .whatsapp-panel {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-
-  .photo-placeholder {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-placeholder img {
-    min-height: 0;
-    border-right: 0;
-    border-bottom: 4px solid var(--ink);
   }
 
   .group-icon {
