@@ -191,6 +191,11 @@ button,
   text-transform: uppercase;
 }
 
+.hero h1 {
+  line-height: 0.98;
+  letter-spacing: 0.005em;
+}
+
 .hero-deck {
   max-width: 42rem;
   margin: 0;
