@@ -213,10 +213,12 @@ button,
 .event-ticket .stamp {
   display: inline-block;
   align-self: flex-start;
-  padding: 0.45rem 0.65rem;
-  border: 2px solid currentColor;
+  padding: 0.65rem 0.85rem;
+  border: 3px solid currentColor;
   transform: rotate(-2deg);
-  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  line-height: 0.95;
 }
 
 .event-date {
