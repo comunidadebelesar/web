@@ -4,7 +4,7 @@
   buttons.forEach((button) => {
     button.addEventListener("click", async () => {
       const title = button.dataset.shareTitle || document.title;
-      const text = button.dataset.shareText || "Información da comunidade escolar do CEIP Plurilíngüe de Belesar";
+      const text = button.dataset.shareText || "Información da comunidade educativa do CEIP Plurilíngüe de Belesar";
       const url = button.dataset.shareUrl || window.location.href;
       const feedback = button.parentElement.querySelector(".share-feedback");
 
