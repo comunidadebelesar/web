@@ -219,8 +219,8 @@ button,
   justify-content: space-between;
   gap: 2.5rem;
   padding: clamp(1.6rem, 3vw, 2.5rem);
-  color: var(--paper-light);
-  background: var(--red);
+  color: var(--red);
+  background: var(--paper-light);
 }
 
 .event-ticket .stamp {
@@ -252,14 +252,15 @@ button,
 
 .event-ticket .button {
   width: 100%;
-  color: var(--ink);
-  background: var(--paper-light);
+  color: var(--paper-light);
+  background: var(--red);
+  border-color: var(--red);
 }
 
 .event-ticket .button:hover,
 .event-ticket .button:focus-visible {
-  color: var(--paper-light);
-  background: var(--ink);
+  color: var(--red);
+  background: var(--paper-light);
 }
 
 .section-heading {
@@ -467,6 +468,31 @@ button,
   flex-direction: column;
   gap: 0.6rem;
   min-width: 12rem;
+}
+
+.back-to-mural {
+  position: fixed;
+  right: max(1rem, calc((100vw - var(--max)) / 2));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 50;
+  width: auto;
+  min-height: 46px;
+  color: var(--paper-light);
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: 4px 4px 0 var(--red);
+}
+
+.back-to-mural::before {
+  content: "←";
+  margin-right: 0.45rem;
+  font-size: 1.15em;
+}
+
+.back-to-mural:hover,
+.back-to-mural:focus-visible {
+  color: var(--ink);
+  background: var(--paper-light);
 }
 
 .article-body {
@@ -718,6 +744,17 @@ button,
 
   .article-tools .button {
     width: 100%;
+  }
+
+  .article-tools .back-to-mural {
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    width: auto;
+    max-width: calc(100vw - 1.5rem);
+    min-height: 44px;
+    padding: 0.6rem 0.8rem;
+    box-shadow: 3px 3px 0 var(--red);
+    font-size: 0.82rem;
   }
 }
 
