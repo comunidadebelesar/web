@@ -219,15 +219,17 @@ button,
   justify-content: space-between;
   gap: 2.5rem;
   padding: clamp(1.6rem, 3vw, 2.5rem);
-  color: var(--red);
-  background: var(--paper-light);
+  color: var(--paper-light);
+  background: var(--red);
 }
 
 .event-ticket .stamp {
   display: inline-block;
   align-self: flex-start;
   padding: 0.65rem 0.85rem;
-  border: 3px solid currentColor;
+  border: 3px solid var(--paper-light);
+  color: var(--red);
+  background: var(--paper-light);
   transform: rotate(-2deg);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
@@ -252,15 +254,14 @@ button,
 
 .event-ticket .button {
   width: 100%;
-  color: var(--paper-light);
-  background: var(--red);
-  border-color: var(--red);
+  color: var(--ink);
+  background: var(--paper-light);
 }
 
 .event-ticket .button:hover,
 .event-ticket .button:focus-visible {
-  color: var(--red);
-  background: var(--paper-light);
+  color: var(--paper-light);
+  background: var(--ink);
 }
 
 .section-heading {
